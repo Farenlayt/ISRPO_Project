@@ -99,7 +99,7 @@ namespace Obdf
             TextDocument activeDoc = dte.ActiveDocument.Object() as TextDocument;
 
             var text = activeDoc.CreateEditPoint(activeDoc.StartPoint).GetText(activeDoc.EndPoint);
-            string pattern = @"[ \t]+";
+            string pattern = @"[\s]+";
             string target = " ";
             Regex regex = new Regex(pattern);
             string result = regex.Replace(text.ToString(), target);

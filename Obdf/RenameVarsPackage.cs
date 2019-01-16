@@ -70,6 +70,7 @@ namespace Obdf
             // Do any initialization that requires the UI thread after switching to the UI thread.
             await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
             await RenameVars.InitializeAsync(this);
+            await DeleteExtraSpaceTabs.InitializeAsync(this);
         }
 
         #endregion

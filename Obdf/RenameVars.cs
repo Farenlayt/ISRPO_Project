@@ -7,6 +7,11 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Task = System.Threading.Tasks.Task;
 
+//Импортируем ещё 3 необходимых пространства имён
+using System.Windows.Forms;
+using EnvDTE;
+using System.IO;
+
 namespace Obdf
 {
     /// <summary>
@@ -89,10 +94,16 @@ namespace Obdf
         private void Execute(object sender, EventArgs e)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
-            string message = "Сча всё переименую."; 
+            DTE dte = Package.GetGlobalService(typeof(DTE)) as DTE;
+            TextDocument activeDoc = dte.ActiveDocument.Object() as TextDocument;
+
+            var text = activeDoc.CreateEditPoint(activeDoc.StartPoint).GetText(activeDoc.EndPoint);
+
+
+
+            string message = text.ToString();
             string title = "RenameVars";
 
-            // Show a message box to prove we were here
             VsShellUtilities.ShowMessageBox(
                 this.package,
                 message,

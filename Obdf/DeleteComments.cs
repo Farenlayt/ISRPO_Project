@@ -102,7 +102,7 @@ namespace Obdf
             string target = "\n";
             Regex regex = new Regex(pattern);
             string result = regex.Replace(text.ToString(), target);
-            pattern = @"\/\*[^\n]*\*\/";
+            pattern = @"\/\*[^\/\*]*\*\/";
             target = "";
             regex = new Regex(pattern);
             result = regex.Replace(result, target);

@@ -73,6 +73,13 @@
           <ButtonText>Delete Comments</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidRenameVarsPackageCmdSet" id="cmdidOneLineCode" priority="0x0100" type="Button">
+        <Parent guid="guidRenameVarsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages4" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Make One Line Code</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -86,6 +93,7 @@
       <Bitmap guid="guidImages1" href="Resources\Command1.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
       <Bitmap guid="guidImages2" href="Resources\DeleteExtraSpaceTabs.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
       <Bitmap guid="guidImages3" href="Resources\DeleteComments.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages4" href="Resources\OneLineCode.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
     </Bitmaps>
   </Commands>
 
@@ -100,6 +108,7 @@
       <IDSymbol value="4129" name="cmdidCommand1" />
       <IDSymbol value="4130" name="cmdidDeleteExtraSpaceTabs" />
       <IDSymbol value="4131" name="cmdidDeleteComments" />
+      <IDSymbol value="4132" name="cmdidOneLineCode" />
     </GuidSymbol>
 
     <GuidSymbol name="guidImages" value="{7850579f-0547-4989-9c5c-81036b00d907}">
@@ -130,6 +139,15 @@
     </GuidSymbol>
   
     <GuidSymbol value="{eae18f7d-41d5-4b46-a6f0-766d4d76de26}" name="guidImages3">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{d4074d23-65a1-459c-862e-77b8376935f6}" name="guidImages4">
       <IDSymbol name="bmpPic1" value="1" />
       <IDSymbol name="bmpPic2" value="2" />
       <IDSymbol name="bmpPicSearch" value="3" />

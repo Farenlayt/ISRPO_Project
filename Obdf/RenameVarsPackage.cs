@@ -72,6 +72,7 @@ namespace Obdf
             await RenameVars.InitializeAsync(this);
             await DeleteExtraSpaceTabs.InitializeAsync(this);
             await DeleteComments.InitializeAsync(this);
+            await OneLineCode.InitializeAsync(this);
         }
 
         #endregion

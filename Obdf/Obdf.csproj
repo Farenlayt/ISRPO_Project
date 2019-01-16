@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="DeleteComments.cs" />
     <Compile Include="DeleteExtraSpaceTabs.cs" />
+    <Compile Include="OneLineCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RenameVars.cs" />
     <Compile Include="RenameVarsPackage.cs" />
@@ -75,6 +76,7 @@
     <Content Include="Resources\Command1.png" />
     <Content Include="Resources\DeleteComments.png" />
     <Content Include="Resources\DeleteExtraSpaceTabs.png" />
+    <Content Include="Resources\OneLineCode.png" />
     <Content Include="Resources\RenameVars.png" />
     <Content Include="Resources\RenameVarsPackage.ico" />
     <Content Include="stylesheet.css" />

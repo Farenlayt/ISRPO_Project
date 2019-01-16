@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Task = System.Threading.Tasks.Task;
 
-//Импортируем ещё 3 необходимых пространства имён
+//Импортируем ещё 4 необходимых пространства имён
 using System.Windows.Forms;
 using EnvDTE;
 using System.IO;

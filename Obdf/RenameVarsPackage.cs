@@ -71,6 +71,7 @@ namespace Obdf
             await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
             await RenameVars.InitializeAsync(this);
             await DeleteExtraSpaceTabs.InitializeAsync(this);
+            await DeleteComments.InitializeAsync(this);
         }
 
         #endregion
